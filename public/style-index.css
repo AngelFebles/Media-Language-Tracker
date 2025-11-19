@@ -12,7 +12,7 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(51, 51, 51);
+    /* background-color: rgb(51, 51, 51); */
     
 }
 
@@ -27,18 +27,21 @@ nav a:hover{
 }
 
 #input-tab{
-    background-color: #0C090A;
-    border-style: solid;
-    border-color: rgb(6, 94, 39);
-    border-bottom-style:hidden;
+    /* background-color: #0C090A; */
+    margin: 2px;
+    margin-bottom: 0%;
+    /* border-style: solid; */
+    /* border-color: rgb(6, 94, 39); */
+    /* border-bottom-style:hidden; */
+    
 }
 
 #graph-tab{
-    border-style: solid;
-    border-color: rgb(6, 94, 39);
-    border-top-style:hidden;
+    /* border-style: solid; */
+    /* border-color: rgb(6, 94, 39); */
+    /* border-top-style:hidden;
     border-left-style:hidden;
-    border-right-style:hidden;
+    border-right-style:hidden; */
    
 }
 
@@ -53,10 +56,13 @@ main{
     height:92vh;
     padding-top: 10%;
     align-items: center;
+    margin: 2px;
+    margin-top: 0;
 
-    border-style: solid;
-  border-color: rgb(6, 94, 39);
-   border-top-style:hidden;
+    /* border-style: solid; */
+  /* border-color: rgb(6, 94, 39); */
+   /* border-top-style:hidden; */
+
 
 }
 
