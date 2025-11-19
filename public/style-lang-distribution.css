@@ -4,7 +4,7 @@ body{
     margin: 0%;
     background-color:#0C090A;
     color:burlywood;
-
+    height: 50vh;
 }
 
 nav{
@@ -40,80 +40,26 @@ background-color: #0C090A;
     border-style: solid;
     border-color: rgb(6, 94, 39);
     border-bottom-style:hidden;
-
-
-   
-   
 }
 
 
 nav div{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-main{
-    height:92vh;
-    padding-top: 10%;
-    align-items: center;
-
-    border-style: solid;
-  border-color: rgb(6, 94, 39);
-   border-top-style:hidden;
-
-}
-
-body div{
-    display: flex;
+    /* width: 100%; */
+    /* height: 100%; */
     flex-direction: column;
     align-self:center;
     align-items: center;
-}
-
-.user_input{
-    margin-top: 3vh;
-    color: aliceblue;
-    border-radius: 7px;
-    align-self: center;
-    font-size: medium;
-}
-
-#input_name{
-    width: 50%;
-    height: 50px;
-    border-radius: 15px; 
-    font-size: large;
-    background-color:rgb(122, 94, 33);
-}
-
-#input_type{
-    background-color:rgb(40, 102, 74);
-    width: 25%;
-}
-
-#input_language{
-     background-color:rgb(77, 40, 102);
-     width: 25%;
-}
-
-#button-submit {
-    width: 30%;
-    align-self: center;
-    background-color: cornflowerblue;
-    color: aliceblue;
-}
-
-
-.index-buttons {
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
     
+    display: flex;
 }
 
-.index-buttons button{
-    font-size:larger;
-    height: 50%;
-    width: 50%;
+main div{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* align-items: center; */
+    margin-top: 10px;
+
 }
+
