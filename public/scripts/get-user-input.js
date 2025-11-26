@@ -38,7 +38,7 @@ document.getElementById("button-submit").addEventListener("click",
         console.log(new_entry);
 
         try {
-            const response = await fetch("http://localhost:3000/api/add-entry", {
+            const response = await fetch("http://localhost:3000/api/media", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

@@ -1,8 +1,22 @@
 This project aims to create a self-hosted database where the user can keep track of the pieces of media (books, series, etc) they consume, as well as the language in which they were consumed. 
 
-This data would later be used to create a graph of the most used languages by the user. (Not implemented yet)
+This data would later be used to create a graph of the most used languages by the user. 
 
-The project expects a postgresql database with the following columns:
+The current project takes the following types of media:
+- Comics
+- Visual Novels
+- (Animated) Series
+- Movies
+- Games
+- Audiobooks
+- Books
+- Songs
+
+The website has the following dependencies: <br>
+  &ensp;L Node.JS v18.19.1<br>
+   &ensp;L PostgreSQL v16.10
+
+It expects a postgresql database with the following columns:
 
 ```
 CREATE TABLE media (
@@ -20,12 +34,9 @@ DATABASE_URL=postgres://postgres:postgres_password@localhost:sql_server_port/med
 PORT=3000 
 ```
 
-The current project takes the following types of media:
-- Comics
-- Visual Novels
-- (Animated) Series
-- Movies
-- Games
-- Audiobooks
-- Books
-- Songs
+
+It can be started by executing the command:
+
+```
+node start
+```

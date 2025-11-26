@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style-index.css">
+    <link rel="stylesheet" href="styles/animation-wave.css">
+    <title>Media Entry</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <div id="input-tab">
+                <h3>Input</h3>
+            </div>
+        </a>
+        <a href="lang-distribution.html">
+            <div id="graph-tab">
+                <h3>Stats</h3>
+            </div>
+        </a>
+
+    </nav>
+
+    <main>
+        <div id="title" class="waviy">
+            <span style="--i:1">君</span>
+            <span style="--i:2">の</span>
+            <span style="--i:3">運</span>
+            <span style="--i:4">命</span>
+            <span style="--i:5">を</span>
+            <span style="--i:6">選</span>
+            <span style="--i:7">べ</span>
+            <span style="--i:8">！</span>
+        </div>
+
+        <div id="input_box">
+            <input type="text" class="user_input" id="input_name" placeholder="Name">
+            <select class="user_input" id="input_type">
+                <option value="manga">漫画</option>
+                <option value="adv">ADV</option>
+                <option value="anime">アニメ</option>
+                <option value="movie">映画</option>
+                <option value="game">ゲーム</option>
+                <option value="audio_book">オーディオブック</option>
+                <option value="book">本</option>
+                <option value="song">歌</option>
+            </select>
+
+            <select class="user_input" id="input_language">
+                <option value="jp">日</option>
+                <option value="fr">FR</option>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+                <option value="de">DE</option>
+            </select>
+
+            <button id="button-submit" class="user_input">
+                Submit!</button>
+        </div>
+    </main>
+
+
+    <script src="scripts/get-user-input.js"></script>
+
+
+</body>
+
+</html>
