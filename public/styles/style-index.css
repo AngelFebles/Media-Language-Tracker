@@ -4,10 +4,11 @@ body{
     margin: 0%;
     background-color:#0C090A;
     color:burlywood;
-
+    height: 100vh;
 }
 
 nav{
+    /* height: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -50,14 +51,20 @@ nav div{
 }
 
 main{
-    height:92vh;
-    padding-top: 10%;
+    height:93vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     border-style: solid;
   border-color: rgb(6, 94, 39);
    border-top-style:hidden;
 
+}
+main div{
+    width: 100%;
 }
 
 body div{
@@ -75,21 +82,28 @@ body div{
     font-size: medium;
 }
 
+input{
+    padding: 20px;
+}
+
 #input_name{
     width: 50%;
     height: 50px;
     border-radius: 15px; 
     font-size: large;
-    background-color:rgb(122, 94, 33);
+    /* background-color:rgb(122, 94, 33); */
+     background-color: #0C090A;;
 }
 
 #input_type{
-    background-color:rgb(40, 102, 74);
+    /* background-color:rgb(40, 102, 74);*/
+     background-color: #0C090A;
     width: 25%;
 }
 
 #input_language{
-     background-color:rgb(77, 40, 102);
+     /* background-color:rgb(77, 40, 102); */
+     background-color: #0C090A;
      width: 25%;
 }
 

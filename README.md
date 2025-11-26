@@ -38,5 +38,5 @@ PORT=3000
 It can be started by executing the command:
 
 ```
-node start
+npm start
 ```

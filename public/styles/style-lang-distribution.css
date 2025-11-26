@@ -4,16 +4,31 @@ body{
     margin: 0%;
     background-color:#0C090A;
     color:burlywood;
-    height: 50vh;
+    height: 100vh;
 }
 
+
+
 nav{
-    display: flex;
+     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(51, 51, 51);
     
+}
+
+main{
+     height:93vh;
+    
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+  border-color: rgb(6, 94, 39);
+   border-top-style:hidden;
 }
 
 nav a:link, nav a:visited{
