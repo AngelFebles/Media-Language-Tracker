@@ -1,15 +1,19 @@
 body{
+    margin: 0%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0%;
-    background-color:#0C090A;
+    /* background-color:#0C090A; */
     color:burlywood;
-    height: 100vh;
+    /* height: 100vh; */
+    overflow: hidden;
 }
 
 
 
 nav{
+    z-index: 1;
      display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -19,16 +23,13 @@ nav{
 }
 
 main{
-     height:93vh;
+     height:100%;
     
     /* display: flex;
     flex-direction: column; */
     justify-content: center;
     align-items: center;
 
-    border-style: solid;
-  border-color: rgb(6, 94, 39);
-   border-top-style:hidden;
 }
 
 nav a:link, nav a:visited{
@@ -51,10 +52,11 @@ nav a:hover{
 }
 
 #graph-tab{
-background-color: #0C090A;
+background-color: #000;
     border-style: solid;
     border-color: rgb(6, 94, 39);
     border-bottom-style:hidden;
+    border-right-style:hidden;
 }
 
 
@@ -78,3 +80,33 @@ main div{
 
 }
 
+
+    .bg-gradient {
+           /* height: 100%; */
+        /* width: 100vw; */
+        height: 100vh;
+      position: absolute;
+      inset: 0;            /* same as top:0; bottom:0; left:0; right:0 */
+      z-index: 0;
+      /* width: 100vw;
+      height: 100vh; */
+      
+      background: radial-gradient(
+        125% 125% at 50% 10%,
+        #000000 40%,
+        #072607 100%
+      );
+    }
+
+    #myChart{
+        z-index: 1;
+        
+    }
+
+    .content {
+      position: relative;
+      z-index: 1; /* sits above the background */
+      color: white;
+      padding: 2rem;
+      font-size: 1.5rem;
+    }

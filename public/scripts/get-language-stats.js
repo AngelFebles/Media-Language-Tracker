@@ -40,7 +40,7 @@ window.onload = async function () {
                                 weight: 'bold'
                             },
                             padding: 5,
-                            color: 'green'
+                            color: 'white'
                         }
 
                     },

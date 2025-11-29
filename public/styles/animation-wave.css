@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-* {
+/* Wave */
 
+* {
   box-sizing: border-box;
 }
 
@@ -9,6 +9,7 @@
   flex-direction: row;
   font-size: 30px;
   justify-content: center;
+  /* animation: 1s input_move_in;  */
 }
 
 .waviy span {
@@ -26,3 +27,18 @@
     transform: translateY(-20px)
   }
 }
+
+/* Slide in */
+ .user_input{
+  animation: 1s input_move_in; 
+}
+
+@keyframes input_move_in{
+from {
+    transform: translateX(200%);
+  }
+  to {
+    
+  }
+} 
+
