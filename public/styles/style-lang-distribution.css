@@ -10,6 +10,13 @@ body{
     overflow: hidden;
 }
 
+.error_box{
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    text-align: center;
+    
+}
 
 
 nav{
@@ -109,4 +116,8 @@ main div{
       color: white;
       padding: 2rem;
       font-size: 1.5rem;
+    }
+
+    .wrapper{
+        /* display:block; */
     }

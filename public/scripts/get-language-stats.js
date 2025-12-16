@@ -15,6 +15,10 @@ window.onload = async function () {
         const labels = stats.map(stat => stat.language);
         const no_of_entries = stats.map(stat => stat.count);
 
+        const canvas_element = document.createElement("canvas");
+        canvas_element.id = "myChart";
+        this.document.getElementsByClassName("wrapper")[0].appendChild(canvas_element);
+
         const ctx = document.getElementById("myChart").getContext("2d");
 
         new Chart(ctx, {
@@ -50,5 +54,30 @@ window.onload = async function () {
 
     } catch (error) {
         console.error("Error fetching language stats:", error);
+
+
+        const error_box = document.createElement("div");
+        error_box.className = 'error_box';
+        this.document.getElementsByClassName("wrapper")[0].appendChild(error_box);
+
+        const error_message1 = document.createElement("h1");
+        error_message1.innerHTML = "Nobody here but us chikens!";
+
+        const error_message2 = document.createElement("h3");
+        error_message2.innerHTML = "(There was an error contacting the database)"
+
+        // const chart_element = document.getElementById("myChart").getContext("2d");
+        // chart_element.remove;
+
+        this.document.getElementsByClassName("error_box")[0].appendChild(error_message1);
+        this.document.getElementsByClassName("error_box")[0].appendChild(error_message2);
+
+
+        // add the newly created element and its content into the DOM
+
+        // const currentDiv = document.getElementById("wrapper");
+        // document.body.insertBefore(newDiv, currentDiv);
     }
+
+
 };
