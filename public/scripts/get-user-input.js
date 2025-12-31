@@ -35,7 +35,17 @@ class TableEntry {
 document.getElementById("button-submit").addEventListener("click",
     async function () {
         const new_entry = TableEntry.get_user_input();
-        console.log(new_entry);
+        // console.log(new_entry);
+
+
+        var myNotification = new Notify('Yo dawg!', {
+            body: 'This is an awesome notification',
+            notifyShow: onNotifyShow
+        });
+
+        function onNotifyShow() {
+            console.log('notification was shown!');
+        }
 
         try {
             const response = await fetch("http://localhost:3000/api/media", {

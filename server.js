@@ -48,15 +48,15 @@ app.post('/api/media', async (req, res) => {
 });
 
 // Get all media entries
-// app.get('/api/media', async (req, res) => {
-//   try {
-//     const result = await pool.query('SELECT id, name, type, language FROM media');
-//     return res.json({ success: true, media: result.rows });
-//   } catch (err) {
-//     console.error('DB error:', err);
-//     return res.status(500).json({ success: false, error: 'database error' });
-//   }
-// });
+app.get('/api/list_media', async (req, res) => {
+  try {
+    const result = await pool.query('SELECT id, name, type, language FROM media');
+    return res.json({ success: true, media: result.rows });
+  } catch (err) {
+    console.error('DB error:', err);
+    return res.status(500).json({ success: false, error: 'database error' });
+  }
+});
 
 // Get a single media entry by ID
 // app.get('/api/media/:id', async (req, res) => {
