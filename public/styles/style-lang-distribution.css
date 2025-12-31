@@ -134,4 +134,6 @@ canvas#myChart{
     flex-direction: column;
     z-index: 5;
     text-align: center;
+    align-self: center;
+    width: 100%;
 }
