@@ -2,6 +2,9 @@ This project aims to create a self-hosted database where the user can keep track
 
 This data would later be used to create a graph of the most used languages by the user. 
 
+
+<img width="1920" height="927" alt="stats_page" src="https://github.com/user-attachments/assets/f8d44c8e-711c-467e-900c-a1c421082457" />
+
 The current project takes the following types of media:
 - Comics
 - Visual Novels
